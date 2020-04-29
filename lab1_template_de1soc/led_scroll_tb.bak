@@ -1,0 +1,22 @@
+module led_scroll_tb;
+
+reg clock;//input
+wire [7:0] blink;
+
+led_scroll DUT (clock,blink);
+
+initial begin
+	clock =1; #5;
+	
+	forever begin
+	clock = 1; #5;
+	clock = 0; #5;
+	end
+end
+
+initial
+ begin
+#200;
+$stop;
+end
+endmodule

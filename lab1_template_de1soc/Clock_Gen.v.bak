@@ -1,0 +1,17 @@
+module Clock_Gen(inclk,counter,divider,outclk)
+
+input inclk;
+reg[31:0] counter =32'd0; //make it a register when ur using a variable in an always block
+input [31:0] divider;
+output outclk;
+
+always @(posedge inclk)
+begin
+
+counter <= counter + 32'd1;
+if (counter>=(divider-1))
+counter <= 32'd0;
+end
+
+assign outclk = (counter<divider/2)?1'b0:1'b1;
+endmodule

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jorda/Desktop/Cpen 311/Lab 1/lab1_template_de1soc/simulation/qsim
+vBasic_Organ_Solution
+!s110 1579766769
+!i10b 1
+!s100 D@4hlEFK<KKEZhC6h`hcn3
+IdoS7homFlenNlQSoPH:f`0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1579766766
+8Basic_Organ_Solution.vo
+FBasic_Organ_Solution.vo
+L0 32
+Z2 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1579766767.966000
+!s107 Basic_Organ_Solution.vo|
+!s90 -work|work|Basic_Organ_Solution.vo|
+!i113 1
+Z3 o-work work
+n@basic_@organ_@solution
+vBasic_Organ_Solution_vlg_check_tst
+Z4 !s110 1579766770
+!i10b 1
+!s100 R`@Z;h1=X>I1<B3mLVALP2
+I[WWaH`ZA[YDEE3:VN?DR90
+R1
+R0
+Z5 w1579766762
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 76
+R2
+r1
+!s85 0
+31
+Z8 !s108 1579766770.088000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+n@basic_@organ_@solution_vlg_check_tst
+vBasic_Organ_Solution_vlg_sample_tst
+R4
+!i10b 1
+!s100 K=DhQ1Q5?:RTCYT7>ClK[3
+IeHm?[]=8FY`iLe2@7UDkS3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+n@basic_@organ_@solution_vlg_sample_tst
+vBasic_Organ_Solution_vlg_vec_tst
+R4
+!i10b 1
+!s100 m?WimAg<_[_d<e3D7z=lS0
+Il_;QQOFoZFA5X?RD>GGSm3
+R1
+R0
+R5
+R6
+R7
+L0 535
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+n@basic_@organ_@solution_vlg_vec_tst

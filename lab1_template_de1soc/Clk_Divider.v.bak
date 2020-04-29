@@ -1,0 +1,21 @@
+module Clk_Divider(inclk, outclk, reset, freqCount); 
+	input inclk;  
+	input reset;
+	input [31:0] freqCount; 
+	output reg outclk = 0; 
+	reg[31:0] count;
+	
+	always@(posedge inclk) begin 
+		if (reset) begin
+			count <= 0;
+			outclk <= 0; 
+		end
+		
+		else if (count <freqCount) 
+			count <= count + 1;		
+			else begin 
+				outclk <= ~outclk; 
+				count <= 0;  
+			end 
+	end
+endmodule

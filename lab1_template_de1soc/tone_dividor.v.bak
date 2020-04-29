@@ -1,0 +1,54 @@
+module tone_dividor (tonetoggle,clock_dividor);
+
+input reg [2:0] tonetoggle;
+reg [31:0] tone;
+
+wire tonedo;
+wire tonere;
+wire tonemi;
+wire tonefa;
+wire toneso;
+wire tonela;
+wire tonesi;
+wire tonedo2;
+
+output reg [31:0] clock_dividor;
+
+always@(*)begin
+case (tonetoggle)
+
+3'b000: tone = tonedo;
+3'b001: tone = tonere;
+3'b010: tone = tonemi;
+3'b011: tone = tonefa;
+3'b100: tone = toneso;
+3'b101: tone = tonela;
+3'b110: tone = tonesi;
+3'b111: tone = tonedo2;
+
+default: tone = tonedo;
+
+endcase
+end
+
+
+
+always@(*) 
+begin
+
+case (tone)
+
+tonedo: clock_dividor = (32'd47801);
+tonere: clock_dividor = (32'd42590);
+tonemi: clock_dividor = (32'd37937);
+tonefa: clock_dividor = (32'd35817);
+toneso: clock_dividor = (32'd31929);
+tonela: clock_dividor = (32'd28409);
+tonesi: clock_dividor = (32'd25330); 
+tonedo2: clock_dividor = (32'd23901);
+
+default: clock_dividor=32'b1;
+endcase  
+end    
+
+endmodule
